@@ -1,0 +1,1357 @@
+$bg-color: #ffffff
+// $tablet-width: ~(max-width: 768px)
+// $640-width: ~(max-width: 640px)
+
+@font-face
+ font-family: "vida31pro"
+ src: url("/fonts/vida31pro.otf") format("opentype")
+
+@font-face
+ font-family: "vida33pro"
+ src: url("/fonts/vida33pro.otf") format("opentype")
+
+
+body
+	margin: 0
+	background-color: $bg-color
+	font-size: 18px
+	font-family: "vida31pro"
+	min-width: 1440px
+	
+
+// main-head start
+.main-head
+
+	&__contaner
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		width: 1300px
+		min-height: 65px
+		margin: 0 auto
+		margin-top: 18px
+		margin-bottom: 20px
+	
+		.main-head__logo
+			margin-top: 7px
+			margin-right: 55px
+
+		.main-head__nav
+			display: block 
+			margin-top: 20px
+			margin-right: 30px
+			width: 500px
+
+			ul
+				list-style: none
+				margin: 0
+				padding: 0
+
+			li
+				vertical-align: top
+				display: inline-block
+				margin-right: 23px
+
+			a
+				display: block
+				text-decoration: none
+				font-size: 14px
+				line-height: 1.43
+				font-family: "vida31Pro"
+				color: #893b67
+
+		.main-head__compare
+			display: block
+			position: relative 
+			margin-top: 20px
+
+			.number
+				position: absolute
+				top: -9px
+				left: 10px
+				display: inline-block
+				width: 16px
+				height: 16px
+				background-color: #893b67
+				border-radius: 50% 
+				
+				span
+					position: absolute
+					top: 3px
+					left: 5px
+					color: #fff
+					font-size: 11px
+
+			a
+				position: relative
+				margin-right: 24px
+				left: 5px
+				bottom: 2px
+				text-decoration: none
+				font-size: 14px
+				line-height: 1.43
+				color: #893b67
+
+		.main-head__cabinet
+			display: block
+			margin-top: 20px
+			width: 180px
+			height: 28px
+
+			a
+				position: relative
+				width: 180px
+				height: 28px
+				padding: 7px 33px 7px 18px
+				text-decoration: none
+				font-size: 14px
+				line-height: 1.43
+				color: #808080
+				border: 1px solid #53565a
+				border-radius: 13.5px
+				
+				&::after
+					position: absolute
+					top: 5px
+					right: 11px
+					content: "\f0d7"
+					width: 10px
+					height: 10px
+					font-family: "FontAwesome"
+					font-size: 14px
+					color: #808080
+
+		.main-head__contact
+			position: relative
+			margin-top: 20px
+
+			strong
+				display: inline-block
+				margin-right: 25px
+				vertical-align: top
+				font-family: "vida33pro"
+				font-size: 18px
+				line-height: 1.11
+				color: #565f66
+
+			.phone
+				position: relative
+				top: -7px
+				right: 0
+				display: inline-block
+				margin-right: 43px
+				width: 36px
+				height: 36px
+				cursor: pointer
+
+				&::before
+					position: absolute
+					top: -7px
+					left: -8px
+					content: ""
+					display: block
+					width: 48px
+					height: 48px
+					border: 1px solid #893b67
+					border-radius: 50%
+			
+				&::after
+					position: absolute
+					top: -12px
+					left: -13px
+					content: ""
+					display: block
+					width: 58px
+					height: 58px
+					border: 1px solid #893b67
+					border-radius: 50%
+
+		.main-head__toggle
+			display: none
+			position: relative
+			margin-top: 20px
+			width: 32px
+			height: 20px
+			cursor: pointer
+			border: none
+			background-color: transparent
+			
+			&::before		
+				content: ""
+				position: absolute
+				top: 0
+				left: 0
+				display: block
+				width: 32px
+				height: 3px
+				background-color: #893b67
+
+				box-shadow: 0 8px 0 0 #893b67, 0 16px 0 0 #893b67
+
+// main-head end
+
+// block-title start
+
+.block-title
+	position: relative
+	width: 100%
+	height: 232px
+	margin-bottom: 76px
+
+	.block-title__contaner
+		width: 1300px
+		margin: 0 auto
+
+		img
+			width: 100%
+			height: 232px
+			background-repeat: no-repeat
+	
+		.block-title__item
+			position: absolute
+			bottom: 0
+
+			span
+				display: block
+				margin: 0
+				margin-bottom: -1px
+				padding: 8px 0 8px 20px
+				width: 115px
+				font-family: "vida33pro"
+				color: #565f66
+				background-color: #fff
+
+			h1
+				display: block
+				margin: 0
+				margin-bottom: -1px
+				padding: 8px 30px 3px 20px
+				font-family: "vida33pro"
+				font-size: 48px
+				line-height: 1.1
+				color: #414141
+				background-color: #fff
+
+// block-title end
+
+// main-block start
+
+.main-block
+
+	&__contaner
+		width: 1300px
+		margin: 0 auto
+		margin-bottom: 80px
+		display: flex
+		flex-direction: row
+
+		.main-block__left-item
+			max-width: 315px
+			padding-right: 45px
+			height: auto
+			border-right: 1px solid #edeeee
+
+			.item-list
+				width: 270px
+				margin-bottom: 26px
+
+				ul
+					margin: 0
+					padding: 0
+					list-style: none
+
+					a
+						display: block
+						margin-bottom: 40px
+						font-size: 16px
+						line-height: 1.67
+						color: #893b67
+						text-decoration: none
+
+			.item-notice
+				position: relative;
+				margin-bottom: 28px
+
+				.number
+					position: absolute
+					top: -7px
+					right: 0
+					width: 20px
+					height: 20px
+					background-color: #893b67
+					border-radius: 50%
+
+					span
+						position: relative
+						top: -15px
+						left: 6px
+						font-family: "vida33pro"
+						font-size: 13px
+						line-height: 3.85
+						color: #fff
+
+				a
+					width: 270px
+					display: block
+					padding: 7px 154px 7px 22px
+					font-size: 16px
+					line-height: 1.67
+					color: #53565a
+					text-decoration: none
+					border: 1px solid #edeeee
+					border-radius: 20px
+					box-sizing: border-box
+
+			.item-address
+				width: 270px
+				padding: 40px 0
+				border-top: 1px solid #edeeee
+
+				span
+					display: block
+					margin-bottom: 14px
+					font-family: "vida33pro"
+					font-size: 24px
+					color: #893b67
+
+				.item-address__more
+					position: relative
+					display: flex
+					flex-direction: row
+					justify-content: space-between
+
+					span
+						font-family: "vida31pro"
+						font-size: 16px
+						line-height: 1.5
+						color: #000
+
+					a
+						position: relative
+						font-family: "vida33pro"
+						display: block
+						padding-right: 30px
+						font-size: 14px
+						line-height: 1.67
+						color: #893b67
+						text-decoration: none
+						
+						&::before
+							position: absolute
+							top: -1px
+							right: 7px
+							font-family: "FontAwesome"
+							font-size: 16px
+							content: "\f105"
+							display: inline-block
+						
+
+
+						&::after
+							position: absolute
+							top: 2px
+							right: 0
+							content: ""
+							display: inline-block
+							width: 20px
+							height: 20px
+							border: 1px solid #893b67
+							border-radius: 50%
+
+		.main-block__right-item
+			margin-left: 44px
+
+			h2
+				margin: 0
+				margin-bottom: 41px
+				padding: 0
+				font-family: "vida33pro"
+				font-size: 36px
+				color: #414141
+
+			.item-block-content
+				position: relative
+				margin-bottom: 24px
+				padding: 24px 30px 20px 24px
+				width: 870px
+				height: auto
+				border: 1px solid #edeeee
+				border-radius: 8px
+
+				span
+					display: inline-block
+					padding: 3px 6px 3px 6px
+					margin-bottom: 24px
+					background-color: #edeeee
+					border-radius: 2px
+					font-family: "vida31pro"
+					font-size: 16px
+					line-height: 1.25
+					color: #000
+				
+				.item-block-content__wrapper
+					position: relative
+
+				.item-block-content__title
+					margin: 0
+					margin-bottom: 18px
+					padding: 0
+					font-family: "vida33pro"
+					font-size: 18px
+					line-height: 1.44
+					color: rgba(0, 0, 0, 0.8)
+
+				.item-block-content__more-1,
+				.item-block-content__more-2,
+				.item-block-content__more-3,
+				.item-block-content__more-4,
+				.item-block-content__more-5
+					display: none
+					max-width: 731px
+					margin: 0
+					margin-bottom: 20px
+					padding: 0
+					font-family: "vida31pro"
+					font-size: 16px
+					line-height: 1.5
+					color: #5a5a58
+
+				.item-block-content__more-active
+					display: block
+				
+				.btn_1,
+				.btn_2,
+				.btn_3,
+				.btn_4,
+				.btn_5	
+					display: block
+					position: absolute
+					top: -21px
+					right: 30px
+					width: 24px
+					height: 24px
+					border: 1px solid rgba(0, 0, 0, .4)
+					background-color: transparent
+					border-radius: 50%
+					cursor: pointer
+
+					&::before
+						position: absolute
+						top: 1px
+						right: 7px
+						content: "\f105"
+						font-family: "FontAwesome"
+						font-size: 22px
+						display: block
+						color: rgba(0, 0, 0, .4)
+						transform: rotate(90deg)
+
+				.btn-active
+					display: block
+					position: absolute
+					top: -21px
+					right: 30px
+					width: 24px
+					height: 24px
+					border-radius: 50%
+					cursor: pointer
+					background-color: #893b67
+					border-color: transparent
+
+					&::before
+						position: absolute
+						top: -1px
+						right: 8px
+						content: "\f105"
+						font-family: "FontAwesome"
+						font-size: 22px
+						display: block
+						transform: rotate(-90deg)
+						color: #fff
+
+			.item-block-content:last-child
+				margin-bottom: 66px
+
+			.item-block-content--active-1,
+			.item-block-content--active-2,
+			.item-block-content--active-3,
+			.item-block-content--active-4,
+			.item-block-content--active-5
+				background-color: #fcfcfc
+// main-block end
+
+// news start
+
+.news
+	width: auto
+	margin-bottom: 38px
+	background-color: #53565a
+	background-color: rgba(0, 0, 0, 0.1);
+
+	&__contaner
+		width: 1300px
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		margin: 0 auto
+		padding-top: 31px
+		padding-bottom: 49px
+
+		.news__item
+			width: 225px
+
+			.data
+				display: inline-block
+				font-size: 16px
+				line-height: 1.43
+				color: rgba(0, 0, 0, 0.4)
+				margin-bottom: 10px
+				margin-right: 2px
+
+			.action
+				display: inline-block
+				padding: 0 8px
+				background-color: #fff
+				font-size: 11px
+				line-height: 2
+				color: #000
+				text-transform: uppercase
+			
+			.action-main
+				display: inline-block
+				padding-left: 13px
+				padding-right: 3px
+				background: url("/img/bg-action.png")
+				width: 46px
+				height: 18px
+				font-family: "vida33pro"
+				font-size: 11px
+				line-height: 2
+				color: #000
+				text-transform: uppercase
+
+			p
+				margin: 0
+				font-size: 14px
+				line-height: 1.29
+				color: #000
+
+	input[type="radio"]
+		display: none
+
+
+// news end
+
+// footer start
+
+.footer
+	background-color: #fff
+
+	&__contaner
+		width: 1300px
+		margin: 0 auto
+		margin-bottom: 44px
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+
+		.footer__contacts
+			max-width: 210px
+			margin-right: 183px
+
+			.socials
+				margin-bottom: 41px
+				font-family: "FontAwesome"
+				font-size: 21px
+				color: #893b67
+				
+				a
+					margin-right: 19px
+					text-decoration: none
+					color: #893b67
+
+					i
+						font-style: normal
+
+			strong
+				display: block
+				margin-bottom: 17px
+				font-family: "vida33pro"
+				font-size: 24px
+				line-height: 0.75
+				color: #424242
+
+			p
+				margin: 0
+				font-size: 14px
+				line-height: 1.29
+				color: #424242
+
+			span
+				font-size: 14px
+				line-height: 1.29
+				color: #893b67
+		
+		.footer__items-list
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+
+			.footer__item-list
+				margin-right: 168px
+
+				a
+					margin: 0
+					margin-bottom: 19px
+					font-family: "vida33pro"
+					font-size: 14px
+					line-height: 1.71
+					color: #000
+					text-decoration: none
+
+				ul
+					margin: 0
+					padding: 0
+					list-style: none
+
+					a
+						font-family: "vida31pro"
+						font-size: 14px
+						line-height: 1.71
+						color: #893b67
+						text-decoration: none
+
+			.footer__item-list:last-child
+				margin-right: 0
+
+			.footer__item-list:last-child > a
+				visibility: hidden
+// footer end
+
+@media screen and (min-width: 640px) and (max-width: 1200px)
+
+	body
+		min-width: 768px
+
+		.main-head
+
+			&__contaner--closed
+				width: 688px
+				margin: 0 auto
+				padding-top: 10px
+				padding-bottom: 10px
+
+				.main-head__logo
+					margin-right: auto
+
+				.main-head__nav
+					display: none
+				
+				.main-head__compare
+					display: none
+
+				.main-head__cabinet
+					display: none
+
+				.main-head__toggle
+					display: block
+					position: relative
+					margin-top: 20px
+					width: 32px
+					height: 20px
+					cursor: pointer
+					border: none
+					background-color: transparent
+					
+					&::before		
+						content: ""
+						position: absolute
+						top: 0
+						left: 0
+						display: block
+						width: 32px
+						height: 3px
+						background-color: #893b67
+
+						box-shadow: 0 8px 0 0 #893b67, 0 16px 0 0 #893b67
+
+
+
+			&__contaner--opened
+				width: 688px
+				margin: 0 auto
+				position: relative
+				flex-direction: column
+
+				.main-head__logo
+					margin-bottom: 116px
+
+				.main-head__nav
+					display: block
+					margin-bottom: 194px
+
+					ul
+						display: flex
+						flex-direction: column
+						justify-content: space-between
+
+						li
+							margin-bottom: 38px
+
+							a
+								font-size: 24px
+								line-height: 0.83
+
+				.main-head__compare
+					display: block
+					margin-top: initial
+					margin-bottom: 46px
+
+					img
+						width: 27px
+						height: 18px
+						margin-right: 10px
+
+					.number
+						top: -18px
+						width: 24px
+						height: 24px
+
+						span
+							top: -2px
+							left: 7px
+							font-size: 17px
+							line-height: 1.82
+
+					a
+						font-size: 24px
+						line-height: 0.83
+				
+				.main-head__cabinet
+					display: block
+					margin-bottom: 78px
+
+					a
+						padding: 0
+						font-size: 24px
+						line-height: 0.83
+						color: #893b67
+						border: none
+
+						&::after
+							display: none
+
+				.main-head__contact
+					margin-bottom: 69px
+
+					strong
+						margin-right: 57px
+						font-size: 39px
+						line-height: 0.61
+						color: #565f66
+
+					.phone
+						top: -12px
+
+						&::before
+							top: -8px
+							width: 60px
+							height: 60px
+
+						&::after
+							top: -15px
+							left: -15px
+							width: 74px
+							height: 74px
+
+						img
+							width: 46px
+							height: 46px
+
+				.main-head__toggle
+					display: block
+					position: absolute
+					right: 0
+					top: 0
+					
+					&::before
+						content: ""
+						display: block
+						width: 32px
+						height: 3px
+						background-color: #893b67
+						box-shadow: none
+						transform: rotate(45deg)
+
+					&::after
+						content: ""
+						position: absolute
+						top: 0
+						left: 0
+						display: block
+						width: 32px
+						height: 3px
+						background-color: #893b67
+						box-shadow: none
+						transform: rotate(-45deg)
+
+		.block-title
+			&__contaner
+				width: 688px !important
+				margin: 0 auto !important
+
+				.block-title__item
+					span
+						padding-bottom: 2px !important
+					h1
+						font-size: 32px !important
+
+		.main-block__contaner
+			width: 688px
+			margin: 0 auto
+			flex-direction: column
+
+			.main-block__left-item
+				max-width: none
+				width: 100%
+				border-right: 0
+
+				.item-list
+					display: none
+
+				.item-notice
+					margin-bottom: 40px
+
+					.number
+						top: -3px
+						left: 120px
+						z-index: 9
+
+					a
+						position: relative
+						width: 100%
+
+						&::after
+							position: absolute
+							top: 7px
+							right: 24px
+							content: "\f0d7"
+							display: block
+							width: 10px 
+							height: 10px
+							font-family: "FontAwesome"
+							font-size: 16px
+							color: #808080
+
+				.items-address
+					display: flex
+					flex-direction: row
+					justify-content: space-between
+					margin-bottom: 82px
+
+					.item-address
+						width: 50%
+						border-top: none
+						padding-top: 0
+						padding-bottom: 0
+
+					.item-address:first-child
+						padding-right: 38px
+						border-right: 1px solid #edeeee
+
+					.item-address:last-child
+						padding-left: 38px
+
+			.main-block__right-item
+				margin-left: 0
+
+				.item-block-content
+					width: auto
+
+					.item-block-content__wrapper
+						
+						.item-block-content__title
+							width: 427px !important
+
+						a
+							right: -17px !important
+
+					.item-block-content__more-active
+						width: 435px
+		.news
+			// width: 777px
+			overflow: hidden
+			margin: 0 auto
+			margin-bottom: 40px
+
+			.news__contaner
+				min-width: 688px
+				margin: 0 auto
+				justify-content: space-around
+
+				.news__item
+					width: 225px
+
+				.data
+					display: inline-block
+					font-size: 16px
+					line-height: 1.43
+					color: rgba(0, 0, 0, 0.4)
+					margin-bottom: 10px
+					margin-right: 2px
+
+				.action
+					display: inline-block
+					padding: 0 8px
+					background-color: #fff
+					font-size: 11px
+					line-height: 2
+					color: #000
+					text-transform: uppercase
+				
+				.action-main
+					display: inline-block
+					padding-left: 13px
+					padding-right: 3px
+					background: url("/img/bg-action.png")
+					width: 46px
+					height: 18px
+					font-family: "vida33pro"
+					font-size: 11px
+					line-height: 2
+					color: #000
+					text-transform: uppercase
+
+				p
+					margin: 0
+					font-size: 14px
+					line-height: 1.29
+					color: #000
+
+			input[type="radio"]
+					display: none
+
+		.footer__contaner
+			width: 688px
+			margin: 0 auto
+			justify-content: space-between
+
+			.footer__contacts
+				max-width: 220px
+				margin-right: 0
+
+			.footer__items-list
+				width: 40%
+				flex-wrap: wrap
+				margin-right: 120px
+
+				.footer__item-list
+					margin-right: 0
+					margin-bottom: 47px
+
+					& > a
+						display: block
+
+@media screen and (max-width: 640px)
+	body
+		min-width: 640px
+
+		.main-head
+			&__contaner
+				width: 510px
+
+			&__contaner--closed
+				width: 510px
+
+				.main-head__logo
+					margin-right: auto
+
+				.main-head__nav
+					display: none
+				
+				.main-head__compare
+					display: none
+
+				.main-head__cabinet
+					display: none
+
+				.main-head__toggle
+					display: block
+					position: relative
+					margin-top: 20px
+					width: 32px
+					height: 20px
+					cursor: pointer
+					border: none
+					background-color: transparent
+					
+					&::before		
+						content: ""
+						position: absolute
+						top: 0
+						left: 0
+						display: block
+						width: 32px
+						height: 3px
+						background-color: #893b67
+
+						box-shadow: 0 8px 0 0 #893b67, 0 16px 0 0 #893b67
+
+
+
+			&__contaner--opened
+				width: 510px
+				margin: 0 auto
+				position: relative
+				flex-direction: column
+
+				.main-head__logo
+					margin-bottom: 116px
+
+				.main-head__nav
+					display: block
+					margin-bottom: 440px
+
+					ul
+						display: flex
+						flex-direction: column
+						justify-content: space-between
+
+						li
+							margin-bottom: 38px
+
+							a
+								font-size: 24px
+								line-height: 0.83
+
+				.main-head__compare
+					display: block
+					margin-top: initial
+					margin-bottom: 46px
+
+					img
+						width: 27px
+						height: 18px
+						margin-right: 10px
+
+					.number
+						top: -18px
+						width: 24px
+						height: 24px
+
+						span
+							top: -2px
+							left: 7px
+							font-size: 17px
+							line-height: 1.82
+
+					a
+						font-size: 24px
+						line-height: 0.83
+				
+				.main-head__cabinet
+					display: block
+					margin-bottom: 78px
+
+					a
+						padding: 0
+						font-size: 24px
+						line-height: 0.83
+						color: #893b67
+						border: none
+
+						&::after
+							display: none
+
+				.main-head__contact
+					margin-bottom: 69px
+
+					strong
+						margin-right: 57px
+						font-size: 39px
+						line-height: 0.61
+						color: #565f66
+
+					.phone
+						top: -12px
+
+						&::before
+							top: -8px
+							width: 60px
+							height: 60px
+
+						&::after
+							top: -15px
+							left: -15px
+							width: 74px
+							height: 74px
+
+						img
+							width: 46px
+							height: 46px
+
+				.main-head__toggle
+					display: block
+					position: absolute
+					right: 0
+					top: 0
+					
+					&::before
+						content: ""
+						display: block
+						width: 32px
+						height: 3px
+						background-color: #893b67
+						box-shadow: none
+						transform: rotate(45deg)
+
+					&::after
+						content: ""
+						position: absolute
+						top: 0
+						left: 0
+						display: block
+						width: 32px
+						height: 3px
+						background-color: #893b67
+						box-shadow: none
+						transform: rotate(-45deg)
+
+		.block-title
+
+			&__contaner
+				width: 510px !important
+				margin: 0 auto !important
+
+				.block-title__item
+					span
+						padding-bottom: 2px !important
+					h1
+						font-size: 26px !important
+
+		.main-block__contaner
+			width: 510px
+			margin: 0 auto
+			flex-direction: column
+
+			.main-block__left-item
+				max-width: none
+				width: 100%
+				border-right: 0
+
+				.item-list
+					display: none
+
+				.item-notice
+					margin-bottom: 40px
+
+					.number
+						top: -3px
+						left: 120px
+						z-index: 9
+
+					a
+						position: relative
+						width: 100%
+
+						&::after
+							position: absolute
+							top: 7px
+							right: 24px
+							content: "\f0d7"
+							display: block
+							width: 10px 
+							height: 10px
+							font-family: "FontAwesome"
+							font-size: 16px
+							color: #808080
+
+				.items-address
+					display: flex
+					flex-direction: row
+					justify-content: space-between
+					margin-bottom: 82px
+
+					.item-address
+						width: 50%
+						border-top: none
+						padding-top: 0
+						padding-bottom: 0
+
+					.item-address:first-child
+						padding-right: 38px
+						border-right: 1px solid #edeeee
+
+					.item-address:last-child
+						padding-left: 38px
+
+			.main-block__right-item
+				margin-left: 0
+
+				.item-block-content
+					width: auto
+
+					.item-block-content__wrapper
+						
+						.item-block-content__title
+							width: 427px !important
+
+						a
+							right: -17px !important
+
+					.item-block-content__more-active
+						width: 435px
+
+		.news
+			width: 640px
+			overflow: hidden
+			margin: 0 auto
+			margin-bottom: 40px
+
+			.news__contaner
+				min-width: 400%
+				margin: 0 auto
+				padding-bottom: 19px
+				justify-content: space-around
+				transition: transform 0.8s ease;
+
+				.news__item
+					width: 325px
+
+				.data
+					display: inline-block
+					font-size: 16px
+					line-height: 1.43
+					color: rgba(0, 0, 0, 0.4)
+					margin-bottom: 10px
+					margin-right: 2px
+
+				.action
+					display: inline-block
+					padding: 0 8px
+					background-color: #fff
+					font-size: 11px
+					line-height: 2
+					color: #000
+					text-transform: uppercase
+				
+				.action-main
+					display: inline-block
+					padding-left: 13px
+					padding-right: 3px
+					background: url("/img/bg-action.png")
+					width: 46px
+					height: 18px
+					font-family: "vida33pro"
+					font-size: 11px
+					line-height: 2
+					color: #000
+					text-transform: uppercase
+
+				p
+					margin: 0
+					font-size: 14px
+					line-height: 1.29
+					color: #000
+			
+			.news__slider
+				position: relative
+				display: block
+				margin-bottom: 37px
+				text-align: center
+
+				input[type="radio"]
+					display: none
+
+				.slider-controls
+					position: absolute
+					bottom: -17px
+					left: 45%
+
+					label
+						display: inline-block
+						width: 10px
+						height: 10px
+						background-color: #000
+						border-radius: 50%
+						cursor: pointer
+
+				#btn-1:checked ~ .slider-controls label[for="btn-1"],
+				#btn-2:checked ~ .slider-controls label[for="btn-2"],
+				#btn-3:checked ~ .slider-controls label[for="btn-3"],
+				#btn-4:checked ~ .slider-controls label[for="btn-4"]
+					background-color: rgba(0, 0, 0, 0.2)
+
+				#btn-1:checked ~ .news__contaner
+					transform: translate(0)
+
+				#btn-2:checked ~ .news__contaner
+					transform: translate(-650px)
+
+				#btn-3:checked ~ .news__contaner
+					transform: translate(-1280px)
+
+				#btn-4:checked ~ .news__contaner
+					transform: translate(-1920px)
+
+				.news__contaner
+					.news__item
+						.data
+							position: relative
+							right: 84px
+
+						.action-main,
+						.action
+							position: relative
+							right: 87px
+
+
+		.footer__contaner
+			width: 510px
+			margin: 0 auto
+			flex-direction: column
+			justify-content: space-between
+
+			.footer__contacts
+				margin-right: 0
+				margin-bottom: 40px
+
+			.footer__items-list
+				width: 10%
+				flex-wrap: wrap
+				margin-right: 500px
+
+				.footer__item-list
+					margin-right: 0
+					margin-bottom: 10px
+
+					ul
+						display: none
+
+					& > a
+						position: relative
+						display: block;
+						width: 100px;
+						margin: 0;
+						margin-bottom: 10px;
+						padding-bottom: 11px;
+						padding-right: 420px;
+						border-bottom: 1px solid #edeeee;
+
+						&::after
+							position: absolute;
+							right: 0
+							top: -4px;
+							right: 7px;
+							content: "\f105";
+							font-family: "FontAwesome";
+							font-size: 22px;
+							display: block;
+							color: #000
+							transform: rotate(90deg);
+						
+						&:active,
+						&:focus
+							&~ ul
+								display: block
+	
